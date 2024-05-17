@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="fstyle.css">
+    </head>
+    <body>
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <header><h1>Регистрация</h1></header>
+        <div class="form">
+            <form id="formo" action="">
+                <div id="reg" class="name-surname">
+                    <label for="name"><b>Имя</b></label>
+                    <br>
+                    <input  class="f" required placeholder="Имя" type="text" minlength="3" name="name" pattern="[А-Я]{1}[а-я]{2,15}" title="Введите имя буквами латинского алфавита (не менее 3 символов и не более 15) начиная с большой буквы">
+                   <br>
+                    <label for="surname"><b>Фамилия</b></label>
+                    <br>
+                    <input  class="f" required placeholder="Фамилия" type="text" minlength="3" name="surname" pattern="[А-Я]{1}[а-я]{2,15}" title="Введите фамилию буквами латинского алфавита (не менее 3 символов и не более 15) начиная с большой буквы">
+                </div>
+                <div id="reg" class="login">
+                    <label for="login"><b>Логин</b></label>
+                    <br>
+                    <input  class="f" required placeholder="User" name="login" minlenght="3" pattern="[a-zA-Z]{5,8}" title="Логин должен состоять из латинских букв" maxlength="8">
+                </div>
+                <div id="reg" class="number">
+                    <label for="number"><b>Тел.</b></label>
+                    <br>
+                    <input  class="f" id="tl" required type="tel" placeholder="+7-XXX-XXX-XX-XX" maxlength="16" name="number" pattern="\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                </div>
+                <div id="reg" class="e-mail">
+                    <label for="e-mail"><b>E-mail</b></label>
+                    <br>
+                    <input  class="f" required placeholder="mail@gmail.com" name="e-mail" type="text" pattern="[A-z0-9_.-]{1,}@[A-z0-9_.-]{1,}\.[A-z]{2,8}">
+                </div>
+                <div id="reg" class="password">
+                    <label for="psw"><b>Пароль</b></label>
+                    <br>
+                    <input  class="f" id="password-1" title="Обязательно верхний, нижний регистр, знак подчеркивания и цифры. Пароль должен содержать от 8 до 20 символов." required placeholder="Пароль" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[_]).{8,20}" required>
+                    <div class="p1">
+                        <label><input type="checkbox" class="password-checkbox"> Показать пароль</label>
+                    </div>
+                    <label  for="psw-repeat"><b>Повторите пароль</b></label>
+                    <br>
+                    <input class="f" id="password-2" title="Обязательно верхний, нижний регистр, знак подчеркивания и цифрыю Пароль должен содержать от 8 до 20 символов." required placeholder="Пароль" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[_]).{8,20}">
+                    <div class="p2">
+                        <label><input type="checkbox" class="password-checkboxx"> Показать пароль</label> 
+                    </div>
+                    <div class="error"></div>
+                </div>
+                
+                <div id="reg" class="paul">
+                    <label for="paul"><b>Пол</b></label>
+                    <div>
+                        <input type="radio" name="gender" value="male" checked> Мужской
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="famale"> Женский
+                    </div>
+                </div>
+                <div id="reg" class="date">
+                    <label for="date"><b>Год</b></label>
+                    <br>
+                    <select id="year">
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                        <option>1999</option>
+                        <option>1998</option>
+                        <option>1997</option>
+                        <option>1996</option>
+                        <option>1995</option>
+                        <option>1994</option>
+                        <option>1993</option>
+                        <option>1992</option>
+                        <option>1991</option>
+                        <option>1990</option>
+                        <option>1989</option>
+                        <option>1988</option>
+                        <option>1987</option>
+                        <option>1986</option>
+                        <option>1985</option>
+                        <option>1984</option>
+                        <option>1983</option>
+                        <option>1982</option>
+                        <option>1981</option>
+                        <option>1980</option>
+                        <option>1979</option>
+                        <option>1978</option>
+                        <option>1977</option>
+                        <option>1976</option>
+                        <option>1975</option>
+                        <option>1974</option>
+                        <option>1973</option>
+                        <option>1972</option>
+                        <option>1971</option>
+                        <option>1970</option>
+                        <option>1968</option>
+                        <option>1967</option>
+                        <option>1966</option>
+                        <option>1965</option>
+                        <option>1964</option>
+                        <option>1963</option>
+                        <option>1962</option>
+                        <option>1961</option>
+                        <option>1960</option>
+                        <option>1959</option>
+                        <option>1958</option>
+                        <option>1957</option>
+                        <option>1956</option>
+                        <option>1955</option>
+                        <option>1954</option>
+                        <option>1953</option>
+                        <option>1952</option>
+                        <option>1951</option>
+                        <option>1950</option>
+                        <option>1949</option>
+                        <option>1948</option>
+                        <option>1947</option>
+                        <option>1946</option>
+                        <option>1945</option>
+                        <option>1944</option>
+                        <option>1943</option>
+                        <option>1942</option>
+                        <option>1941</option>
+                        <option>1940</option>
+                        <option>1939</option>
+                        <option>1939</option>
+                        <option>1939</option>
+                        <option>1939</option>
+                        <option>1938</option>
+                        <option>1937</option>
+                        <option>1936</option>
+                        <option>1935</option>
+                        <option>1934</option>
+                        <option>1933</option>
+                        <option>1932</option>
+                        <option>1931</option>
+                        <option>1930</option>
+                        <option>1929</option>
+                        <option>1928</option>
+                        <option>1927</option>
+                        <option>1926</option>
+                        <option>1925</option>
+                        <option>1924</option>
+                        <option>1923</option>
+                        <option>1922</option>
+                        <option>1921</option>
+                        <option>1920</option>
+                        <option>1919</option>
+                        <option>1918</option>
+                        <option>1917</option>
+                        <option>1916</option>
+                        <option>1915</option>
+                        <option>1914</option>
+                        <option>1913</option>
+                        <option>1912</option>
+                        <option>1911</option>
+                        <option>1910</option>
+                    </select>
+                    
+                </div> 
+                <div id="reg">
+                    <button type="submit" class="registerbtn" id="submit">Зарегистрироваться!</button>
+                </div>
+            </form>
+        </div> 
+        <script>
+            $('body').on('click', '.password-checkbox', function(){
+	           if ($(this).is(':checked')){
+                   $('#password-1').attr('type', 'text');
+	        } else {
+                $('#password-1').attr('type', 'password');
+	        }
+            }); 
+        </script>
+        <script>
+            $('body').on('click', '.password-checkboxx', function(){
+	           if ($(this).is(':checked')){
+                   $('#password-2').attr('type', 'text');
+	        } else {
+                $('#password-2').attr('type', 'password');
+	        }
+            });
+        </script>
+        <script>
+	   $("#password-2").on("keyup", function() { // Выполняем скрипт при изменении содержимого 2-го поля
+		  var value_input1 = $("#password-1").val(); // Получаем содержимое 1-го поля
+		  var value_input2 = $(this).val(); // Получаем содержимое 2-го поля
+		  if(value_input1 != value_input2) { // Условие, если поля не совпадают
+			$(".error").html("Пароли не совпадают!"); // Выводим сообщение
+			$("#submit").attr("disabled", "disabled"); // Запрещаем отправку формы
+		  } else { // Условие, если поля совпадают
+			$("#submit").removeAttr("disabled");  // Разрешаем отправку формы
+			$(".error").html(""); // Скрываем сообщение
+		  }
+	   });
+        </script>
+    </body>
+</html>
